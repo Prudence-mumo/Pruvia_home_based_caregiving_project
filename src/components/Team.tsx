@@ -7,7 +7,7 @@ const leaders = [
     initials: 'AK',
     color: 'bg-blue-deep',
     bio: 'Visionary leader driving Pruvia\'s mission to deliver compassionate, high-quality home healthcare across Kenya and beyond.',
-    image: 'https://images.pexels.com/photos/3807571/pexels-photo-3807571.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '/images/team/Lady1photo.jpg',
   },
   {
     name: 'Ms. Prudence Mumo',
@@ -15,7 +15,7 @@ const leaders = [
     initials: 'PM',
     color: 'bg-teal',
     bio: 'Oversees daily operations and strategic growth, ensuring every client receives personalized, consistent, and compassionate care.',
-    image: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '/images/team/Lady2photo.webp',
   },
   {
     name: 'Mr. Brian Oyaro Mireri, RN',
@@ -23,7 +23,7 @@ const leaders = [
     initials: 'BM',
     color: 'bg-emerald-700',
     bio: 'Registered nurse with 5+ years of home healthcare experience. Brian\'s leadership and clinical expertise ensure the highest standards of patient-centered care.',
-    image: 'https://images.pexels.com/photos/6749773/pexels-photo-6749773.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: '/images/team/Healthcare_gent_nurse.jpg',
     highlight: true,
   },
 ];
