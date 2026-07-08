@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a2e;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-blue-deep leading-tight;
+    font-family: 'Merriweather', serif;
+  }
+
+  .btn-primary {
+    @apply bg-gold text-blue-deep font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+  }
+
+  .btn-primary:hover {
+    background-color: #b8970d;
+  }
+
+  .btn-secondary {
+    @apply bg-blue-deep text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+  }
+
+  .btn-secondary:hover {
+    background-color: #0a3254;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  .input-field {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-800 placeholder-gray-400 transition-all duration-200;
+    outline: none;
+  }
+
+  .input-field:focus {
+    border-color: #328CC1;
+    box-shadow: 0 0 0 3px rgba(50, 140, 193, 0.15);
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1 rounded-full;
+    background-color: rgba(50, 140, 193, 0.1);
+    color: #328CC1;
+  }
+}
+
+/* Smooth scroll offset for fixed navbar */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #328CC1; border-radius: 3px; }
+
+/* Testimonial animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.testimonial-enter {
+  animation: fadeInUp 0.4s ease forwards;
+}
