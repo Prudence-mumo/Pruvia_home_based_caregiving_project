@@ -73,11 +73,12 @@ export default function Team() {
               }`}
             >
               {/* Photo */}
-              <div className="h-52 overflow-hidden">
+              <div className="aspect-[3/4] overflow-hidden bg-gray-100">
                 <img
                   src={leader.image}
                   alt={leader.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  style={{ objectPosition: '50% 25%' }}
                 />
               </div>
 
